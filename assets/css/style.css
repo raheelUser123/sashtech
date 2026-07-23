@@ -1455,7 +1455,7 @@ section {
   }
 
   .process-steps {
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr !important
   }
 
   .process-steps:before {
@@ -1506,7 +1506,7 @@ section {
   .stats-band-grid,
   .process-grid,
   .stats {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr !important
   }
 
   .stats-band-grid div {
@@ -2298,7 +2298,7 @@ body.popup-open {
   }
 
   .process-steps {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .pricing-service-grid {
@@ -3416,4 +3416,8 @@ body.popup-open {
   columns: 4;
   column-gap: 16px;
   margin-top: 8px;
+}
+
+.process-steps.abtt {
+    grid-template-columns: repeat(4, 1fr);
 }

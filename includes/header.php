@@ -37,8 +37,8 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
                 <div class="nav-dropdown"><button aria-expanded="false">Services <span class="nav-chevron"
                             aria-hidden="true"></span></button>
                     <div class="dropdown-menu"><a href="services.php">All
-                            Services</a><?php foreach($services as $slug=>$s): ?><a
-                            href="<?=$slug?>.php"><?=e($s['title'])?></a><?php endforeach; ?></div>
+                            Services</a><?php foreach($services as $navSlug=>$s): ?><a
+                            href="<?=$navSlug?>.php"><?=e($s['title'])?></a><?php endforeach; ?></div>
                 </div><a class="<?=is_active('portfolio.php')?>" href="portfolio.php">Portfolio</a><a
                     class="<?=is_active('pricing.php')?>" href="pricing.php">Pricing</a><a
                     class="<?=is_active('contact.php')?>" href="contact.php">Contact</a><button

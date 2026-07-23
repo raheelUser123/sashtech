@@ -23,6 +23,42 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 <?php else: ?>
 <section><div class="container two-col"><div class="reveal"><span class="eyebrow">OVERVIEW</span><h2>Creative execution built around your objective.</h2></div><div class="reveal"><p>Every <?=strtolower(e($service['title']))?> project begins with a clear understanding of the audience, platform, message and desired outcome. We then shape the right creative direction, production workflow and delivery format.</p><p>You receive a defined scope, transparent revision process and assets prepared for practical use.</p></div></div></section>
 <?php endif; ?>
+<?php if ($slug === 'web-design-technical-seo'): ?>
+<section class="home-showcase-section mockup-section">
+  <div class="showcase-head reveal">
+    <div class="container">
+      <span class="eyebrow">WEB DESIGN</span>
+      <h2>Website Mockups</h2>
+      <p>Full-page website designs crafted for performance, clarity and premium aesthetics.</p>
+    </div>
+  </div>
+  <div class="mockup-grid">
+    <a class="mockup-card reveal" href="portfolio.php">
+      <div class="mockup-frame">
+        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web5.png" alt="Website Mockup 5"></div>
+      </div>
+    </a>
+    <a class="mockup-card reveal" href="portfolio.php">
+      <div class="mockup-frame">
+        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web6.png" alt="Website Mockup 6"></div>
+      </div>
+    </a>
+    <a class="mockup-card reveal" href="portfolio.php">
+      <div class="mockup-frame">
+        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web3.png" alt="Website Mockup 3"></div>
+      </div>
+    </a>
+    <a class="mockup-card reveal" href="portfolio.php">
+      <div class="mockup-frame">
+        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web4.png" alt="Website Mockup 4"></div>
+      </div>
+    </a>
+  </div>
+  <div class="container showcase-cta-row">
+    <a class="btn btn-outline" href="portfolio.php">View All Web Projects <span>→</span></a>
+  </div>
+</section>
+<?php endif; ?>
 <section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p></article><?php endforeach; ?></div></div></section>
 <section><div class="container two-col"><div><span class="eyebrow">WHO IT’S FOR</span><h2>Built for brands, creators, authors, individuals and teams ready to improve their output.</h2></div><ul class="feature-list"><li>Startups launching a new idea</li><li>Creators building a stronger content system</li><li>Businesses refreshing their digital presence</li><li>Agencies needing reliable production support</li><li>Authors, publishers and individuals developing visual assets</li></ul></div></section>
 <section><div class="container"><div class="section-head"><div><span class="eyebrow">PROCESS</span><h2>A simple path from brief to delivery.</h2></div></div><div class="process-steps">
