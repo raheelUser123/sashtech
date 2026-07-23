@@ -36,7 +36,6 @@ if (is_dir($baseDir)) {
 <section class="page-hero">
   <div class="container two-col">
     <div>
-      <div class="breadcrumbs"><a href="index.php">Home</a> / <a href="services.php">Services</a> / Illustration &amp; Creative Artwork</div>
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1>Illustration &amp; Creative Artwork</h1>
       <p>Distinctive covers, characters and bespoke artwork created to make ideas unforgettable.</p>
@@ -111,6 +110,31 @@ if (is_dir($baseDir)) {
   </div>
 </section>
 
+<!-- ===== CLIENT REVIEW ===== -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">CLIENT REVIEW</span>
+        <h2>What authors and individuals say.</h2>
+      </div>
+    </div>
+    <article class="testimonial reveal">
+      <div class="testimonial-stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p>“The illustration style gave our book the premium, memorable look we wanted. The process was smooth, clear and truly aligned with what an author needs when launching a story.”</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#5c48ff,#f359c1)">AR</div>
+        <div>
+          <b>Author / Individual Creator</b>
+          <small>Book Cover Project</small>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <!-- ===== PROCESS ===== -->
 <section>
   <div class="container">
@@ -137,30 +161,6 @@ if (is_dir($baseDir)) {
       </article>
       <?php endforeach; ?>
     </div>
-  </div>
-</section>
-
-<!-- ===== FAQ ===== -->
-<section>
-  <div class="container faq">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">SERVICE FAQ</span>
-        <h2>Common questions.</h2>
-      </div>
-    </div>
-    <?php
-    $faqs = [
-      'What do you need from me to start?' => 'A short brief, references, goals, timeline and any existing brand assets are usually enough to begin.',
-      'How long does a project take?'       => 'Timelines depend on complexity and are confirmed before work starts.',
-      'Are revisions included?'             => 'Yes. The number of included revision rounds is defined in the proposal.',
-    ];
-    foreach($faqs as $q => $a): ?>
-    <div class="faq-item">
-      <button class="faq-button" aria-expanded="false"><?=$q?><span>+</span></button>
-      <div class="faq-panel"><p><?=$a?></p></div>
-    </div>
-    <?php endforeach; ?>
   </div>
 </section>
 

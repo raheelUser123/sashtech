@@ -6,7 +6,6 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 <section class="page-hero">
   <div class="container two-col">
     <div>
-      <div class="breadcrumbs"><a href="index.php">Home</a> / <a href="services.php">Services</a> / <?=e($service['title'])?></div>
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1><?=e($service['title'])?></h1>
       <p><?=e($service['short'])?></p>
@@ -36,5 +35,4 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
   <article class="process-node reveal"><div class="step-top"><b><?=$s[0]?></b><span class="step-line"></span></div><h3><?=e($s[1])?></h3><p><?=e($s[2])?></p></article>
   <?php endforeach; ?>
 </div></div></section>
-<section><div class="container faq"><div class="section-head"><div><span class="eyebrow">SERVICE FAQ</span><h2>Common questions.</h2></div></div><?php foreach(['What do you need from me to start?'=>'A short brief, references, goals, timeline and any existing brand assets are usually enough to begin.','How long does a project take?'=>'Timelines depend on complexity and are confirmed before work starts.','Are revisions included?'=>'Yes. The number of included revision rounds is defined in the proposal.'] as $q=>$a): ?><div class="faq-item"><button class="faq-button" aria-expanded="false"><?=$q?><span>+</span></button><div class="faq-panel"><p><?=$a?></p></div></div><?php endforeach; ?></div></section>
 <?php include 'includes/footer.php'; ?>

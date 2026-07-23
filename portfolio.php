@@ -3,6 +3,8 @@
 // Dynamically fetch portfolio items from folders
 $basePath = __DIR__ . '/assets/images/portfolio/';
 $categories = [
+    'web-design' => ['path' => 'assets/images/portfolio/webui', 'title' => 'Web Design'],
+    'branding' => ['path' => 'assets/images/branding', 'title' => 'Branding'],
     '2d-models' => ['folder' => '2d models', 'title' => '2D Models'],
     '3d-models' => ['folder' => '3d models', 'title' => '3D Models'],
     'gif-animations' => ['folder' => 'GIF and animations', 'title' => 'GIF & Animations'],
@@ -16,13 +18,21 @@ $defaultCategory = key($categories);
 
 $items = [];
 foreach ($categories as $catId => $info) {
-    $folderName = $info['folder'];
-    $dir = $basePath . $folderName;
-    if (!is_dir($dir)) continue;
+    $searchDir = null;
 
-    // Check nested directory (handles both nested and flat folder structures)
-    $nestedDir = $dir . '/' . $folderName;
-    $searchDir = is_dir($nestedDir) ? $nestedDir : $dir;
+    if (!empty($info['path'])) {
+        $searchDir = __DIR__ . '/' . $info['path'];
+    } else {
+        $folderName = $info['folder'];
+        $dir = $basePath . $folderName;
+        if (!is_dir($dir)) continue;
+
+        // Check nested directory (handles both nested and flat folder structures)
+        $nestedDir = $dir . '/' . $folderName;
+        $searchDir = is_dir($nestedDir) ? $nestedDir : $dir;
+    }
+
+    if (!is_dir($searchDir)) continue;
 
     $files = scandir($searchDir);
     if ($files === false) continue;
@@ -40,7 +50,7 @@ foreach ($categories as $catId => $info) {
             $webPath = str_replace('\\', '/', $webPath);
 
             $type = in_array($ext, ['mp4', 'mov', 'webm']) ? 'video' : 'image';
-            
+
             // Format a human-readable title from the filename
             $name = pathinfo($file, PATHINFO_FILENAME);
             $name = preg_replace('/[_-]/', ' ', $name);
@@ -62,7 +72,6 @@ foreach ($categories as $catId => $info) {
 
 <section class="page-hero">
     <div class="container">
-        <div class="breadcrumbs"><a href="index.php">Home</a> / Portfolio</div>
         <span class="eyebrow">PORTFOLIO</span>
         <h1>Work designed to be seen, understood and remembered.</h1>
         <p>Explore our latest projects across design, dynamic 2D/3D modeling, illustration, and animation.</p>

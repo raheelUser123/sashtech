@@ -71,7 +71,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web1.png" alt="Website Mockup 1">
+          <img src="assets/images/websiteockup/web5.png" alt="Website Mockup 5">
         </div>
       </div>
     </a>
@@ -79,7 +79,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web2.png" alt="Website Mockup 2">
+          <img src="assets/images/websiteockup/web6.png" alt="Website Mockup 6">
         </div>
       </div>
     </a>
@@ -195,7 +195,7 @@ include 'includes/header.php';
           <!-- Review 1 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"Sash Tech brought clarity and creativity to our brand. The final work felt modern, polished and completely aligned with our goals."</p>
+            <p>Sash Tech brought clarity and creativity to our brand. The final work felt modern, polished and completely aligned with our goals.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#5c48ff,#f359c1)">JM</div>
               <div><b>Jason Miller</b><small>Marketing Director</small></div>
@@ -205,7 +205,7 @@ include 'includes/header.php';
           <!-- Review 2 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"The video editing and content strategy helped us create a more consistent channel and stronger audience engagement. Highly recommend!"</p>
+            <p>The video editing and content strategy helped us create a more consistent channel and stronger audience engagement. Highly recommend!</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#f359c1,#ff8c42)">SJ</div>
               <div><b>Sarah Johnson</b><small>Content Creator</small></div>
@@ -215,7 +215,7 @@ include 'includes/header.php';
           <!-- Review 3 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"Professional, responsive and results-driven. Our new website finally represents the quality of our business. Couldn't be happier."</p>
+            <p>Professional, responsive and results-driven. Our new website finally represents the quality of our business. Couldn't be happier.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#10b981,#06b6d4)">DL</div>
               <div><b>David Lee</b><small>Business Owner</small></div>
@@ -225,7 +225,7 @@ include 'includes/header.php';
           <!-- Review 4 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"Our YouTube channel completely transformed after working with Sash Tech. The thumbnails and channel strategy doubled our click-through rate."</p>
+            <p>Our YouTube channel completely transformed after working with Sash Tech. The thumbnails and channel strategy doubled our click-through rate.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">AR</div>
               <div><b>Ahmed Raza</b><small>YouTube Creator</small></div>
@@ -235,7 +235,7 @@ include 'includes/header.php';
           <!-- Review 5 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"The 3D animations they produced exceeded every expectation. The attention to detail was incredible and delivery was right on time."</p>
+            <p>The 3D animations they produced exceeded every expectation. The attention to detail was incredible and delivery was right on time.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#8b5cf6,#3b82f6)">MC</div>
               <div><b>Maria Chen</b><small>Creative Director</small></div>
@@ -245,7 +245,7 @@ include 'includes/header.php';
           <!-- Review 6 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"Sash Tech handled our complete digital marketing campaign. The ROI was phenomenal — we saw a 3x increase in leads within the first month."</p>
+            <p>Sash Tech handled our complete digital marketing campaign. The ROI was phenomenal, and we saw a 3x increase in leads within the first month.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#06b6d4,#5c48ff)">TK</div>
               <div><b>Tom Kaur</b><small>E-commerce Founder</small></div>
@@ -255,7 +255,7 @@ include 'includes/header.php';
           <!-- Review 7 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"From logo to full brand identity — they nailed it on the first pass. The team really listened and understood exactly what we were going for."</p>
+            <p>From logo to full brand identity, they nailed it on the first pass. The team really listened and understood exactly what we were going for.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#ec4899,#8b5cf6)">LP</div>
               <div><b>Layla Parker</b><small>Brand Manager</small></div>
@@ -265,10 +265,30 @@ include 'includes/header.php';
           <!-- Review 8 -->
           <article class="testimonial testi-slide">
             <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-            <p>"Their SEO work genuinely moved the needle. We went from page 4 to top 3 in under 60 days. Communication throughout was excellent."</p>
+            <p>Their SEO work genuinely moved the needle. We went from page 4 to top 3 in under 60 days, and communication throughout was excellent.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar" style="background:linear-gradient(135deg,#10b981,#f59e0b)">RN</div>
               <div><b>Ryan Nguyen</b><small>Digital Strategist</small></div>
+            </div>
+          </article>
+
+          <!-- Review 9 -->
+          <article class="testimonial testi-slide">
+            <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <p>The illustration work gave our book a premium, memorable identity. The process was smooth, collaborative and exactly what a writer needs to bring a story to life.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#5c48ff,#f359c1)">TW</div>
+              <div><b>Tom Wilson</b><small>Writer</small></div>
+            </div>
+          </article>
+
+          <!-- Review 10 -->
+          <article class="testimonial testi-slide">
+            <div class="testimonial-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <p>The illustration direction made our portfolio feel more polished and memorable. Sara Noble gave our project a clear visual voice and helped us present our work with confidence.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background:linear-gradient(135deg,#ec4899,#8b5cf6)">SN</div>
+              <div><b>Sara Nobel</b><small>Illustration Client</small></div>
             </div>
           </article>
 
@@ -350,7 +370,7 @@ include 'includes/header.php';
 })();
 </script>
 
-<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span>→</span></button><a class="btn btn-outline light" href="contact.php">Book a Consultation <span>→</span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.png" alt="Sash Tech creative growth collaboration"></div></div></section>
+<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span>→</span></button><a class="btn btn-outline light" href="contact.php">Get in Touch <span>→</span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.png" alt="Sash Tech creative growth collaboration"></div></div></section>
 
 
 <?php include 'includes/footer.php'; ?>

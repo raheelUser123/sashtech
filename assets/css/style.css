@@ -15,7 +15,9 @@
   --grad: linear-gradient(135deg, #5c48ff 0%, #a847ef 48%, #f359c1 100%);
   --shadow: 0 24px 70px rgba(0, 0, 0, .3)
 }
-
+.mockup-browser-bar {
+    display: none;
+}
 * {
   box-sizing: border-box
 }
