@@ -69,7 +69,7 @@ include 'includes/header.php';
   <div class="mockup-grid">
     <a class="mockup-card reveal" href="portfolio.php">
       <div class="mockup-frame">
-        <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
+        
         <div class="mockup-scroll-area">
           <img src="assets/images/websiteockup/web5.png" alt="Website Mockup 5">
         </div>
@@ -77,7 +77,7 @@ include 'includes/header.php';
     </a>
     <a class="mockup-card reveal" href="portfolio.php">
       <div class="mockup-frame">
-        <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
+        
         <div class="mockup-scroll-area">
           <img src="assets/images/websiteockup/web6.png" alt="Website Mockup 6">
         </div>
@@ -85,7 +85,7 @@ include 'includes/header.php';
     </a>
     <a class="mockup-card reveal" href="portfolio.php">
       <div class="mockup-frame">
-        <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
+        
         <div class="mockup-scroll-area">
           <img src="assets/images/websiteockup/web3.png" alt="Website Mockup 3">
         </div>
@@ -93,7 +93,7 @@ include 'includes/header.php';
     </a>
     <a class="mockup-card reveal" href="portfolio.php">
       <div class="mockup-frame">
-        <div class="mockup-browser-bar"><span></span><span></span><span></span></div>
+        
         <div class="mockup-scroll-area">
           <img src="assets/images/websiteockup/web4.png" alt="Website Mockup 4">
         </div>
@@ -147,7 +147,7 @@ include 'includes/header.php';
   <div class="container">
     <div class="showcase-grid-4 reveal">
       <a class="showcase-card illus-labeled" href="illustration-creative-artwork.php">
-        <div class="showcase-img-wrap"><img src="assets/images/portfolio/Illustration/Character Designing/47ec2273-1508-40b7-bdb5-1767b629b93d.webp" alt="Character Designing"></div>
+        <div class="showcase-img-wrap"><img src="assets/images/chr1.png" alt="Character Designing"></div>
         <div class="showcase-label">Character Designing</div>
       </a>
       <a class="showcase-card illus-labeled" href="illustration-creative-artwork.php">
