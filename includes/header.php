@@ -18,6 +18,8 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     <meta property="og:url" content="<?=e($canonical)?>">
     <meta property="og:image" content="<?=e(url('assets/images/logo.png'))?>">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"

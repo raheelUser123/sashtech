@@ -110,8 +110,8 @@ include 'includes/header.php';
   <div class="showcase-head reveal">
     <div class="container">
       <span class="eyebrow">BRANDING</span>
-      <h2>Brand Identity</h2>
-      <p>Logos, visual systems and brand identities built to be recognisable and timeless.</p>
+      <h2>Branding & Visual Assets</h2>
+      <p>Custom logos, design systems, and brand toolkits built for immediate recognition.</p>
     </div>
   </div>
   <div class="container">

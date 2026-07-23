@@ -28,7 +28,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
   <div class="showcase-head reveal">
     <div class="container">
       <span class="eyebrow">WEB DESIGN</span>
-      <h2>Website Mockups</h2>
+      <h2>Web Projects</h2>
       <p>Full-page website designs crafted for performance, clarity and premium aesthetics.</p>
     </div>
   </div>
