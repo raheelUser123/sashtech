@@ -21,8 +21,9 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 <?php if ($slug === 'ai-search-optimization'): ?>
 <section><div class="container two-col"><div class="reveal"><span class="eyebrow">GEO</span><h2>Beyond Traditional SEO — Optimizing for the AI Era</h2></div><div class="reveal"><p>As search behavior shifts from traditional search engine results pages to generative AI answers, relying on keyword-dense SEO alone is no longer enough. Modern users ask conversational questions and expect direct, cited answers.</p><p>Generative Engine Optimization (GEO) ensures your brand becomes the trusted entity that platforms like ChatGPT, Google Gemini, Perplexity, and Claude quote directly in their responses.</p><ul class="feature-list"><li><strong>Entity & Knowledge Graph Building:</strong> Aligning your site data so AI systems clearly understand who you are and what services you provide.</li><li><strong>Citation & Authority Engineering:</strong> Securing high-trust backlinks and citations across digital networks to validate your credibility.</li><li><strong>Semantic & Intent-Driven Content:</strong> Structuring information using natural language patterns that match complex search queries.</li></ul></div></div></section>
 <?php else: ?>
-<section><div class="container two-col"><div class="reveal"><span class="eyebrow">OVERVIEW</span><h2>Creative execution built around your objective.</h2></div><div class="reveal"><p>Every <?=strtolower(e($service['title']))?> project begins with a clear understanding of the audience, platform, message and desired outcome. We then shape the right creative direction, production workflow and delivery format.</p><p>You receive a defined scope, transparent revision process and assets prepared for practical use.</p></div></div></section>
+<section><div class="container two-col"><div class="reveal"><span class="eyebrow">OVERVIEW</span><h2>Creative execution built around your objective.</h2></div><div class="reveal"><p>Every custom <?=strtolower(e($service['title']))?> project begins with an in-depth discovery phase mapping your core business goals, target audience, and market positioning. We turn these strategic insights into responsive UI/UX layouts, conversion-focused content structures, and scalable website architecture engineered for peak performance.</p></div></div></section>
 <?php endif; ?>
+<?php include 'includes/video-reel-section.php'; ?>
 <?php if ($slug === 'web-design-technical-seo'): ?>
 <section class="home-showcase-section mockup-section">
   <div class="showcase-head reveal">
@@ -78,5 +79,4 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 <?php if ($slug === 'ai-search-optimization'): ?>
 <section><div class="container"><div class="section-head"><div><span class="eyebrow">READY TO DOMINATE THE FUTURE OF SEARCH?</span><h2>Don't let AI search engines leave your brand behind.</h2></div></div><div class="btn-group" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;"><button class="btn btn-primary" data-popup-open>Get Started with GEO <span>↗</span></button><a class="btn btn-secondary" href="contact.php">Schedule a Strategy Call <span>↗</span></a></div></div></section>
 <?php endif; ?>
-<?php include 'includes/video-reel-section.php'; ?>
 <?php include 'includes/footer.php'; ?>
