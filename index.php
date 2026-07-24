@@ -45,7 +45,7 @@ include 'includes/header.php';
 
 <section class="services-home">
   <div class="container">
-    <div class="center-head reveal"><span class="eyebrow">WHAT WE DO</span><h2>Our Creative Services</h2><p>End-to-end creative and digital solutions to elevate your brand, content and online growth.</p></div>
+    <div class="center-head reveal"><span class="eyebrow">WHAT WE DO</span><h2>Our Creative Services</h2><p>Creative and digital solutions from start to finish to elevate your brand, content, and online growth.</p></div>
     <div class="service-home-grid">
       <?php foreach($services as $slug=>$s): ?><article class="service-home-card reveal"><div class="service-icon"><?=e($s['icon'])?></div><h3><?=e($s['title'])?></h3><p><?=e($s['short'])?></p><a href="<?=$slug?>.php">Explore <span>→</span></a></article><?php endforeach; ?>
       <article class="service-home-card reveal"><div class="service-icon">✎</div><h3>Content & Copywriting</h3><p>High-converting copy that engages audiences and supports stronger campaigns.</p><a href="digital-marketing-paid-acquisition.php">Explore <span>→</span></a></article>
@@ -54,7 +54,7 @@ include 'includes/header.php';
   </div>
 </section>
 <?php
-// Remove old $works/$categories block — replaced by curated showcase below
+// Remove old $works/$categories block and replace it with the curated showcase below
 ?>
 
 <!-- ======= WEBSITE MOCKUPS ======= -->

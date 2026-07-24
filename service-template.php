@@ -19,7 +19,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
   </div>
 </section>
 <?php if ($slug === 'ai-search-optimization'): ?>
-<section><div class="container two-col"><div class="reveal"><span class="eyebrow">GEO</span><h2>Beyond Traditional SEO — Optimizing for the AI Era</h2></div><div class="reveal"><p>As search behavior shifts from traditional search engine results pages to generative AI answers, relying on keyword-dense SEO alone is no longer enough. Modern users ask conversational questions and expect direct, cited answers.</p><p>Generative Engine Optimization (GEO) ensures your brand becomes the trusted entity that platforms like ChatGPT, Google Gemini, Perplexity, and Claude quote directly in their responses.</p><ul class="feature-list"><li><strong>Entity & Knowledge Graph Building:</strong> Aligning your site data so AI systems clearly understand who you are and what services you provide.</li><li><strong>Citation & Authority Engineering:</strong> Securing high-trust backlinks and citations across digital networks to validate your credibility.</li><li><strong>Semantic & Intent-Driven Content:</strong> Structuring information using natural language patterns that match complex search queries.</li></ul></div></div></section>
+<section><div class="container two-col"><div class="reveal"><span class="eyebrow">GEO</span><h2>Beyond traditional SEO, built for the AI era</h2></div><div class="reveal"><p>As search behavior shifts from traditional search engine results pages to generative AI answers, relying on keyword-dense SEO alone is no longer enough. Modern users ask conversational questions and expect direct, cited answers.</p><p>Generative Engine Optimization (GEO) ensures your brand becomes the trusted entity that platforms like ChatGPT, Google Gemini, Perplexity, and Claude quote directly in their responses.</p><ul class="feature-list"><li><strong>Entity & Knowledge Graph Building:</strong> Aligning your site data so AI systems clearly understand who you are and what services you provide.</li><li><strong>Citation & Authority Engineering:</strong> Securing high-trust backlinks and citations across digital networks to validate your credibility.</li><li><strong>Semantic & Intent-Driven Content:</strong> Structuring information using natural language patterns that match complex search queries.</li></ul></div></div></section>
 <?php else: ?>
 <section><div class="container two-col"><div class="reveal"><span class="eyebrow">OVERVIEW</span><h2>Creative execution built around your objective.</h2></div><div class="reveal"><p>Every custom <?=strtolower(e($service['title']))?> project begins with an in-depth discovery phase mapping your core business goals, target audience, and market positioning. We turn these strategic insights into responsive UI/UX layouts, conversion-focused content structures, and scalable website architecture engineered for peak performance.</p></div></div></section>
 <?php endif; ?>
@@ -55,7 +55,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
     <div class="built-showcase-head reveal">
       <span class="eyebrow">YES, WE BUILT THESE</span>
       <h2>A glimpse into the web design work we've shipped.</h2>
-      <p>Real websites, real brands, real results — crafted for performance, clarity and premium aesthetics.</p>
+      <p>Real websites, real brands, and real results crafted for performance, clarity, and premium aesthetics.</p>
     </div>
     <div class="built-grid">
       <?php
