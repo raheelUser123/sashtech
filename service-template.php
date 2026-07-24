@@ -24,41 +24,83 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 <section><div class="container two-col"><div class="reveal"><span class="eyebrow">OVERVIEW</span><h2>Creative execution built around your objective.</h2></div><div class="reveal"><p>Every custom <?=strtolower(e($service['title']))?> project begins with an in-depth discovery phase mapping your core business goals, target audience, and market positioning. We turn these strategic insights into responsive UI/UX layouts, conversion-focused content structures, and scalable website architecture engineered for peak performance.</p></div></div></section>
 <?php endif; ?>
 <?php include 'includes/video-reel-section.php'; ?>
+<?php include 'includes/card-stack-section.php'; ?>
 <?php if ($slug === 'web-design-technical-seo'): ?>
-<section class="home-showcase-section mockup-section">
-  <div class="showcase-head reveal">
-    <div class="container">
-      <span class="eyebrow">WEB DESIGN</span>
-      <h2>Web Projects</h2>
-      <p>Full-page website designs crafted for performance, clarity and premium aesthetics.</p>
+<section class="built-showcase">
+  <style>
+    .built-showcase{padding:100px 0;overflow:hidden}
+    .built-showcase .container{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
+    .built-showcase-head{position:sticky;top:120px}
+    .built-showcase-head .eyebrow{color:#a855f7;font-weight:800;letter-spacing:1px}
+    .built-showcase-head h2{font-size:clamp(38px,5vw,58px);font-weight:900;line-height:1.05;margin:10px 0 18px}
+    .built-showcase-head p{color:rgba(255,255,255,.6);font-size:16px;line-height:1.6;max-width:360px}
+
+    .built-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .built-card{perspective:1000px}
+    .built-card-inner{position:relative;border-radius:16px;overflow:hidden;background:#111;border:1px solid rgba(255,255,255,.08);transition:transform .25s ease,box-shadow .25s ease;transform-style:preserve-3d;will-change:transform}
+    .built-card-inner:hover{box-shadow:0 25px 50px rgba(0,0,0,.45)}
+    .built-card-inner img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top}
+    .built-card-caption{display:flex;align-items:center;justify-content:space-between;padding:14px 4px 0}
+    .built-card-caption span{font-weight:700;color:#fff}
+    .built-card-caption svg{width:16px;height:16px;color:rgba(255,255,255,.6);transition:transform .2s ease,color .2s ease}
+    .built-card:hover .built-card-caption svg{transform:translate(2px,-2px);color:#a855f7}
+
+    @media (max-width:900px){
+      .built-showcase .container{grid-template-columns:1fr}
+      .built-showcase-head{position:static}
+      .built-grid{grid-template-columns:1fr}
+    }
+  </style>
+  <div class="container">
+    <div class="built-showcase-head reveal">
+      <span class="eyebrow">YES, WE BUILT THESE</span>
+      <h2>A glimpse into the web design work we've shipped.</h2>
+      <p>Real websites, real brands, real results — crafted for performance, clarity and premium aesthetics.</p>
+    </div>
+    <div class="built-grid">
+      <?php
+      $builtProjects = [
+        ['img' => 'assets/images/portfolio/webui/web1.jpeg', 'name' => 'Paronama'],
+        ['img' => 'assets/images/portfolio/webui/web2.jpeg', 'name' => 'Photos All'],
+        ['img' => 'assets/images/portfolio/webui/web3.webp', 'name' => 'Artist Website'],
+        ['img' => 'assets/images/portfolio/webui/web4.webp', 'name' => 'Organic Website'],
+      ];
+      foreach ($builtProjects as $p):
+      ?>
+      <a class="built-card reveal" href="portfolio.php">
+        <div class="built-card-inner">
+          <img src="<?=e($p['img'])?>" alt="<?=e($p['name'])?>" loading="lazy">
+        </div>
+        <div class="built-card-caption">
+          <span><?=e($p['name'])?></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+      </a>
+      <?php endforeach; ?>
     </div>
   </div>
-  <div class="mockup-grid">
-    <a class="mockup-card reveal" href="portfolio.php">
-      <div class="mockup-frame">
-        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web5.png" alt="Website Mockup 5"></div>
-      </div>
-    </a>
-    <a class="mockup-card reveal" href="portfolio.php">
-      <div class="mockup-frame">
-        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web6.png" alt="Website Mockup 6"></div>
-      </div>
-    </a>
-    <a class="mockup-card reveal" href="portfolio.php">
-      <div class="mockup-frame">
-        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web3.png" alt="Website Mockup 3"></div>
-      </div>
-    </a>
-    <a class="mockup-card reveal" href="portfolio.php">
-      <div class="mockup-frame">
-        <div class="mockup-scroll-area"><img src="assets/images/websiteockup/web4.png" alt="Website Mockup 4"></div>
-      </div>
-    </a>
-  </div>
-  <div class="container showcase-cta-row">
-    <a class="btn btn-outline" href="portfolio.php">View All Web Projects <span>→</span></a>
-  </div>
 </section>
+<script>
+(function () {
+  const cards = document.querySelectorAll('.built-card-inner');
+  const MAX_TILT = 10;
+
+  cards.forEach(function (el) {
+    el.addEventListener('mousemove', function (e) {
+      const rect = el.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      const rotateY = x * MAX_TILT * 2;
+      const rotateX = -y * MAX_TILT * 2;
+      el.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.03,1.03,1.03)';
+    });
+
+    el.addEventListener('mouseleave', function () {
+      el.style.transform = 'rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
+    });
+  });
+})();
+</script>
 <?php endif; ?>
 <section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p></article><?php endforeach; ?></div></div></section>
 <section><div class="container two-col"><div><span class="eyebrow">WHO IT’S FOR</span><h2>Built for brands, creators, authors, individuals and teams ready to improve their output.</h2></div><ul class="feature-list"><li>Startups launching a new idea</li><li>Creators building a stronger content system</li><li>Businesses refreshing their digital presence</li><li>Agencies needing reliable production support</li><li>Authors, publishers and individuals developing visual assets</li></ul></div></section>
