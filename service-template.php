@@ -102,7 +102,46 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 })();
 </script>
 <?php endif; ?>
-<section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p></article><?php endforeach; ?></div></div></section>
+<?php
+$itemDescriptions = [
+  'web-design-technical-seo' => [
+    'Website Designing' => 'Clean interface design, clear messaging, and intuitive flows built to guide users with confidence.',
+    'Search Engine Optimization' => 'Technical SEO, metadata refinement, and structure tuning to strengthen visibility and rankings.',
+    'Responsive Development & Tuning' => 'Mobile-first builds and performance refinement to keep every experience polished and fast.',
+  ],
+  'video-production-editing' => [
+    'Long-Form Video Editing' => 'Narrative pacing, seamless cuts, and polished storytelling designed for deeper audience engagement.',
+    'Short-Form Video Editing' => 'Fast-paced edits, strong hooks, and platform-ready cuts built for higher reach and retention.',
+    'Sound Design & Color Grading' => 'Immersive audio, balanced color, and cinematic finishing that elevate the overall impact.',
+  ],
+  'creator-growth-youtube-strategy' => [
+    'YouTube SEO' => 'Keyword-rich optimization, metadata shaping, and discoverability improvements tailored to your niche.',
+    'Audience Scaling Strategies' => 'Growth-focused planning, channel positioning, and content systems built for sustained expansion.',
+    'Thumbnail Design & Optimization' => 'High-contrast thumbnails and click-worthy visuals crafted to boost curiosity and CTR.',
+  ],
+  'illustration-creative-artwork' => [
+    'Book & Novel Covers' => 'Story-led cover concepts, visual mood, and premium presentation designed to stand out instantly.',
+    'Character Designing' => 'Memorable character concepts, style consistency, and expressive visuals made for lasting impact.',
+    'Custom Artworks' => 'Original illustrations and artistic direction shaped around your concept and creative goal.',
+  ],
+  '2d-3d-modeling-animation' => [
+    '2D Modeling & Animation' => 'Clean 2D assets and motion-ready sequences built to bring ideas to life with clarity.',
+    '3D Modeling & Animation' => 'Detailed 3D forms, lighting, and motion crafted for immersive digital presentation.',
+    'Custom GIFs & Motion Graphics' => 'Short-form animated visuals and branded motion loops designed for scroll-stopping impact.',
+  ],
+  'ai-search-optimization' => [
+    'Entity & Knowledge Graph Building' => 'Structured authority signals and knowledge mapping that help AI systems understand your brand clearly.',
+    'Citation & Authority Engineering' => 'Credibility-building references and trust signals that strengthen your presence across AI platforms.',
+    'Semantic & Intent-Driven Content' => 'Natural-language content designed to match user questions and improve AI visibility.',
+  ],
+  'digital-marketing-paid-acquisition' => [
+    'Social Media Marketing' => 'Audience-focused campaigns and social strategies crafted to build awareness and steady engagement.',
+    'Paid Advertising (PPC)' => 'Targeted ad campaigns and conversion-driven spend planning designed to maximize return.',
+    'Content Marketing & Copywriting' => 'Clear messaging, persuasive copy, and strategic content built to support growth and trust.',
+  ],
+];
+?>
+<section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><?php $description = $itemDescriptions[$slug][$item] ?? 'Tailored planning, creative development, refinement and delivery for your specific goals and platforms.'; ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p><?=e($description)?></p></article><?php endforeach; ?></div></div></section>
 <section><div class="container two-col"><div><span class="eyebrow">WHO IT’S FOR</span><h2>Built for brands, creators, authors, individuals and teams ready to improve their output.</h2></div><ul class="feature-list"><li>Startups launching a new idea</li><li>Creators building a stronger content system</li><li>Businesses refreshing their digital presence</li><li>Agencies needing reliable production support</li><li>Authors, publishers and individuals developing visual assets</li></ul></div></section>
 <section><div class="container"><div class="section-head"><div><span class="eyebrow">PROCESS</span><h2>A simple path from brief to delivery.</h2></div></div><div class="process-steps">
   <?php 

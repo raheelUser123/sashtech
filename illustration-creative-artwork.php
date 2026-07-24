@@ -77,17 +77,17 @@ if (is_dir($baseDir)) {
       <article class="service-card reveal">
         <div class="card-icon">✦</div>
         <h3>Book &amp; Novel Covers</h3>
-        <p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p>
+        <p>Strategic concept development, polished visual storytelling, and final-ready assets tailored to your story and audience.</p>
       </article>
       <article class="service-card reveal">
         <div class="card-icon">✦</div>
         <h3>Character Designing</h3>
-        <p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p>
+        <p>Distinctive character concepts, visual consistency, and production-ready illustrations crafted for your brand or narrative.</p>
       </article>
       <article class="service-card reveal">
         <div class="card-icon">✦</div>
         <h3>Custom Artworks</h3>
-        <p>Tailored planning, creative development, refinement and delivery for your specific goals and platforms.</p>
+        <p>Original artwork, style refinement, and flexible delivery formats shaped around your creative vision and purpose.</p>
       </article>
     </div>
   </div>
