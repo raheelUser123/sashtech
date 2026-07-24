@@ -2,7 +2,7 @@
 declare(strict_types=1);
 if (session_status() !== PHP_SESSION_ACTIVE) { session_start(); }
 
-define('SITE_NAME', 'Sash Tech');
+define('SITE_NAME', 'Sash Tech Digital');
 define('SITE_TAGLINE', 'Your Edge Design');
 define('SITE_URL', 'https://sashtech.digital');
 define('CONTACT_EMAIL', 'contact@sashtech.digital');
@@ -15,8 +15,8 @@ define('SMTP_USERNAME', 'contact@sashtech.digital');
 define('SMTP_PASSWORD', 'SashDigital123!@#');
 define('SMTP_ENCRYPTION', 'ssl'); 
 define('MAIL_FROM_EMAIL', 'contact@sashtech.digital');
-define('MAIL_FROM_NAME', 'Sash Tech');
+define('MAIL_FROM_NAME', 'Sash Tech Digital');
 define('MAIL_TO_EMAIL', 'contact@sashtech.digital');
-define('MAIL_TO_NAME', 'Sash Tech');
+define('MAIL_TO_NAME', 'Sash Tech Digital');
 
 date_default_timezone_set('UTC');
