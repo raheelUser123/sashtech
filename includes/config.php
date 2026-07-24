@@ -13,7 +13,7 @@ define('SMTP_HOST', 'sashtech.digital');
 define('SMTP_PORT', 465);
 define('SMTP_USERNAME', 'contact@sashtech.digital');
 define('SMTP_PASSWORD', 'SashDigital123!@#');
-define('SMTP_ENCRYPTION', 'ssl'); // ssl for 465, tls for 587
+define('SMTP_ENCRYPTION', 'ssl'); 
 define('MAIL_FROM_EMAIL', 'contact@sashtech.digital');
 define('MAIL_FROM_NAME', 'Sash Tech');
 define('MAIL_TO_EMAIL', 'contact@sashtech.digital');

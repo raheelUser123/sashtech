@@ -17,7 +17,7 @@ include 'includes/header.php';
       <div class="trust-points"><span>✓ Fast turnaround</span><span>✓ Premium quality</span><span>✓ Clear communication</span></div>
     </div>
     <div class="hero-visual reveal">
-      <div class="visual-frame"><img src="assets/images/generated/hero-creative.png" alt="Creative design and animation workspace"></div>
+      <div class="visual-frame"><img src="assets/images/hero-image.png" alt="Creative design and animation workspace"></div>
      
     </div>
   </div>
