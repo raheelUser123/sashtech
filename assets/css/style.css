@@ -1953,7 +1953,6 @@ section {
     border-bottom: none;
     padding: 0;
     position: relative;
-    margin-top: 50px;
 }
 .services-ticker-wrapper::after, .services-ticker-wrapper::before {
     content: '';
@@ -2207,12 +2206,17 @@ section {
     transform: translateX(-50%) translateY(0);
 }
 @media (max-width:1024px) {
+    section.hero.hero-dark {
+    display: flex;
+    flex-direction: column-reverse;
+}
     section.page-hero {
     padding-bottom: 0;
 }
     img.ssss {
-    position: unset;
-}
+        position: unset;
+        height: auto;
+    }
 
 section.page-hero {
     display: flex;

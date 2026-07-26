@@ -22,7 +22,9 @@ include 'includes/header.php';
      
     </div>
   </div>
-  <!-- Services Ticker -->
+  
+</section>
+<!-- Services Ticker -->
   <div class="services-ticker-wrapper">
     <div class="services-ticker-track">
       <span class="ticker-item"><span class="ticker-star">✦</span> Illustration &amp; Creative Artwork</span>
@@ -42,8 +44,6 @@ include 'includes/header.php';
       <span class="ticker-item"><span class="ticker-star">✦</span> Digital Marketing &amp; Paid Acquisition</span>
     </div>
   </div>
-</section>
-
 <section class="services-home">
   <div class="container">
     <div class="center-head reveal"><span class="eyebrow">WHAT WE DO</span><h2>Our Creative Services</h2><p>Creative and digital solutions from start to finish to elevate your brand, content, and online growth.</p></div>
