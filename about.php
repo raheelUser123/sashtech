@@ -1,6 +1,10 @@
 <?php $pageTitle='About Sash Tech | Creative Digital Agency';$pageDescription='Meet Sash Tech, a multidisciplinary creative agency combining design, technology and growth strategy.';include 'includes/header.php'; ?>
-<section class="page-hero hero"><div class="container two-col"><div class=""><span class="eyebrow">ABOUT SASH TECH</span><h1><span>Creative thinking</span> with a technical edge.</h1><p>We help ambitious brands and creators move from scattered ideas to clear, high-quality digital execution.</p></div><div class="reveal">
-      <img src="assets/images/newimages/about-image.png" style="width: 100%; max-width: 630px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.3); display: block; margin: 0 auto;">
+<section class="page-hero hero">
+  <div class="image-wrap"> 
+  <img class="ssss" src="assets/images/newimages/about-image.png" style="width: 100%; max-width: 630px;display: block; margin: 0 auto;">
+</div>
+  <div class="container two-col"><div class=""><span class="eyebrow">ABOUT SASH TECH</span><h1><span>Creative thinking</span> with a technical edge.</h1><p>We help ambitious brands and creators move from scattered ideas to clear, high-quality digital execution.</p></div><div class="reveal">
+      
     </div></div></section>
 <section><div class="container two-col"><div class="reveal"><span class="eyebrow">WHAT WE DO BEST</span><h2>Integrated design, technical precision, and modern strategy under one roof.</h2></div><div class="reveal"><p><strong>Web Architecture & Technical SEO:</strong> Building fast, responsive, and scalable web solutions optimized for search performance and user conversion.</p><p><strong>2D & 3D Visual Modeling:</strong> Crafting premium custom 3D models, 2D assets, and motion designs that give your brand a distinct visual edge.</p><p><strong>Generative Engine Optimization (GEO):</strong> Preparing your digital footprint so AI platforms like ChatGPT, Gemini, and Perplexity can cite and recommend your brand.</p><p><strong>Digital Growth & Performance:</strong> Content creation, video editing, and strategic campaign management to keep your target audience engaged.</p></div></div></section>
 <section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">HOW WE TURN VISION INTO EXECUTION</span><h2>We eliminate friction, unnecessary handoffs, and misaligned strategy by keeping everything under one connected workflow.</h2></div></div><div class="process-steps abtt">

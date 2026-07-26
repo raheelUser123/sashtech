@@ -34,7 +34,13 @@ if (is_dir($baseDir)) {
 
 <!-- ===== SERVICE HERO ===== -->
 <section class="page-hero">
-  <div class="container two-col">
+  <div class="image-wrap">
+   <img class="ssss" src="assets/images/chr1.png"
+           alt="Illustration &amp; Creative Artwork"
+           onerror="this.style.display='none'"
+           style="width:100%;max-width:630px;display:block;margin:0 auto;">
+</div>
+           <div class="container two-col">
     <div>
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1>Illustration &amp; Creative Artwork</h1>
@@ -42,10 +48,7 @@ if (is_dir($baseDir)) {
       <button class="btn btn-primary" data-popup-open>Request a Quote <span>↗</span></button>
     </div>
     <div class="reveal">
-      <img src="assets/images/chr1.png"
-           alt="Illustration &amp; Creative Artwork"
-           onerror="this.style.display='none'"
-           style="width:100%;max-width:630px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);box-shadow:0 20px 40px rgba(0,0,0,0.3);display:block;margin:0 auto;">
+     
     </div>
   </div>
 </section>

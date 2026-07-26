@@ -4,6 +4,7 @@ $pageDescription='Sash Tech creates bold design, animation, video, websites, SEO
 include 'includes/header.php';
 ?>
 <section class="hero hero-dark">
+  <div class="image-wrap"><img class="ssss" src="assets/images/hero-image.png" alt="Creative design and animation workspace"></div>
   <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
   <div class="container hero-grid">
     <div class="hero-copy reveal">
@@ -17,7 +18,7 @@ include 'includes/header.php';
       <div class="trust-points"><span>✓ Fast turnaround</span><span>✓ Premium quality</span><span>✓ Clear communication</span></div>
     </div>
     <div class="hero-visual reveal">
-      <div class="visual-frame"><img src="assets/images/hero-image.png" alt="Creative design and animation workspace"></div>
+      
      
     </div>
   </div>
