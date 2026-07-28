@@ -4,7 +4,7 @@ $pageDescription='Sash Tech creates bold design, animation, video, websites, SEO
 include 'includes/header.php';
 ?>
 <section class="hero hero-dark">
-  <div class="image-wrap"><img class="ssss" src="assets/images/hero-image.png" alt="Creative design and animation workspace"></div>
+  <div class="image-wrap"><img class="ssss" src="assets/images/hero-image.webp" alt="Creative design and animation workspace"></div>
   <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
   <div class="container hero-grid">
     <div class="hero-copy reveal">
@@ -72,7 +72,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web5.png" alt="Website Mockup 5">
+          <img src="assets/images/websiteockup/web5.webp" alt="Website Mockup 5">
         </div>
       </div>
     </a>
@@ -80,7 +80,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web6.png" alt="Website Mockup 6">
+          <img src="assets/images/websiteockup/web6.webp" alt="Website Mockup 6">
         </div>
       </div>
     </a>
@@ -88,7 +88,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web3.png" alt="Website Mockup 3">
+          <img src="assets/images/websiteockup/web3.webp" alt="Website Mockup 3">
         </div>
       </div>
     </a>
@@ -96,7 +96,7 @@ include 'includes/header.php';
       <div class="mockup-frame">
         
         <div class="mockup-scroll-area">
-          <img src="assets/images/websiteockup/web4.png" alt="Website Mockup 4">
+          <img src="assets/images/websiteockup/web4.webp" alt="Website Mockup 4">
         </div>
       </div>
     </a>
@@ -148,7 +148,7 @@ include 'includes/header.php';
   <div class="container">
     <div class="showcase-grid-4 reveal">
       <a class="showcase-card illus-labeled" href="illustration-creative-artwork.php">
-        <div class="showcase-img-wrap"><img src="assets/images/chr1.png" alt="Character Designing"></div>
+        <div class="showcase-img-wrap"><img src="assets/images/chr1.webp" alt="Character Designing"></div>
         <div class="showcase-label">Character Designing</div>
       </a>
       <a class="showcase-card illus-labeled" href="illustration-creative-artwork.php">
@@ -172,11 +172,11 @@ include 'includes/header.php';
 </section>
 
 <section class="process-section"><div class="container"><div class="process-shell">
-  <div class="process-intro reveal"><div><span class="eyebrow">OUR PROCESS</span><h2>From first idea to final delivery.</h2><p>Every project follows a clear, collaborative system designed to protect quality, timing and communication.</p><button class="btn btn-outline light" data-popup-open>Start Your Project <span>→</span></button></div><div style="margin:24px 0;"><img src="assets/images/newimages/From first idea to final delivery. Our process section.png" alt="Process workflow overview" style="width:100%; border-radius:16px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 15px 35px rgba(0,0,0,0.25);"></div></div>
+  <div class="process-intro reveal"><div><span class="eyebrow">OUR PROCESS</span><h2>From first idea to final delivery.</h2><p>Every project follows a clear, collaborative system designed to protect quality, timing and communication.</p><button class="btn btn-outline light" data-popup-open>Start Your Project <span>→</span></button></div><div style="margin:24px 0;"><img src="assets/images/newimages/From first idea to final delivery. Our process section.webp" alt="Process workflow overview" style="width:100%; border-radius:16px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 15px 35px rgba(0,0,0,0.25);"></div></div>
   <div class="process-steps">
   <?php $steps=[['01','Discover','We learn your goals, audience, references and project requirements.'],['02','Plan','We define the scope, milestones, creative direction and delivery schedule.'],['03','Create','Our specialists develop the main concepts, visuals and production assets.'],['04','Refine','You review the work while we improve every detail through focused revisions.'],['05','Deliver','Final files are quality-checked, organized and delivered ready to launch.']]; foreach($steps as $s): ?><article class="process-node reveal"><div class="step-top"><b><?=$s[0]?></b><span class="step-line"></span></div><h3><?=$s[1]?></h3><p><?=$s[2]?></p></article><?php endforeach; ?>
   </div></div></div></section>
-<section class="why-section"><div class="container why-grid"><div class="why-image reveal"><img src="assets/images/newimages/WHY CHOOSE US Section.png" alt="Creative team collaborating"><span class="metric m1"><b>50+</b> Creative Skills</span><span class="metric m2"><b>300+</b> Projects</span><span class="metric m3"><b>98%</b> Satisfaction</span></div><div class="why-copy reveal"><span class="eyebrow">WHY CHOOSE US</span><h2>Your Vision. Our Expertise.<br>Outstanding Results.</h2><p>We combine creativity, strategy and technology to deliver work that feels polished, performs strongly and supports your long-term growth.</p><div class="check-grid"><span>Creative & experienced team</span><span>Flexible pricing</span><span>On-time delivery</span><span>Scalable support</span><span>Clear communication</span><span>Quality assurance</span></div></div></div></section>
+<section class="why-section"><div class="container why-grid"><div class="why-image reveal"><img src="assets/images/newimages/WHY CHOOSE US Section.webp" alt="Creative team collaborating"><span class="metric m1"><b>50+</b> Creative Skills</span><span class="metric m2"><b>300+</b> Projects</span><span class="metric m3"><b>98%</b> Satisfaction</span></div><div class="why-copy reveal"><span class="eyebrow">WHY CHOOSE US</span><h2>Your Vision. Our Expertise.<br>Outstanding Results.</h2><p>We combine creativity, strategy and technology to deliver work that feels polished, performs strongly and supports your long-term growth.</p><div class="check-grid"><span>Creative & experienced team</span><span>Flexible pricing</span><span>On-time delivery</span><span>Scalable support</span><span>Clear communication</span><span>Quality assurance</span></div></div></div></section>
 <section class="stats-band"><div class="container stats-band-grid"><div><strong class="counter" data-target="300" data-suffix="+">0</strong><span>Projects Completed</span></div><div><strong class="counter" data-target="200" data-suffix="+">0</strong><span>Happy Clients</span></div><div><strong class="counter" data-target="5" data-suffix="+">0</strong><span>Years Experience</span></div><div><strong class="counter" data-target="8" data-suffix="">0</strong><span>Core Services</span></div></div></section>
 <section class="testimonials-section testi-carousel-section">
   <div class="container">
@@ -371,7 +371,9 @@ include 'includes/header.php';
 })();
 </script>
 
-<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span>→</span></button><a class="btn btn-outline light" href="contact.php">Get in Touch <span>→</span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.png" alt="Sash Tech creative growth collaboration"></div></div></section>
+<?php include 'includes/yt-video-section.php'; ?>
+
+<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span>→</span></button><a class="btn btn-outline light" href="contact.php">Get in Touch <span>→</span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.webp" alt="Sash Tech creative growth collaboration"></div></div></section>
 
 
 <?php include 'includes/footer.php'; ?>

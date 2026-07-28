@@ -143,7 +143,7 @@ $itemDescriptions = [
 ];
 ?>
 <section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><?php $description = $itemDescriptions[$slug][$item] ?? 'Tailored planning, creative development, refinement and delivery for your specific goals and platforms.'; ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p><?=e($description)?></p></article><?php endforeach; ?></div></div></section>
-<?php include 'includes/yt-video-section.php'; ?>
+<!-- yt-video-section moved to homepage -->
 <section><div class="container two-col"><div><span class="eyebrow">WHO IT’S FOR</span><h2>Built for brands, creators, authors, individuals and teams ready to improve their output.</h2></div><ul class="feature-list"><li>Startups launching a new idea</li><li>Creators building a stronger content system</li><li>Businesses refreshing their digital presence</li><li>Agencies needing reliable production support</li><li>Authors, publishers and individuals developing visual assets</li></ul></div></section>
 <section><div class="container"><div class="section-head"><div><span class="eyebrow">PROCESS</span><h2>A simple path from brief to delivery.</h2></div></div><div class="process-steps">
   <?php 

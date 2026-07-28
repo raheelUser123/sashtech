@@ -60,19 +60,19 @@
         'num'   => '01',
         'title' => 'Website Designing',
         'desc'  => 'Custom website design built around your brand and your audience, not a recycled template. Every layout is planned around clarity, hierarchy, and the action you want visitors to take.',
-        'image' => 'assets/images/cardstack-web/1.png',
+        'image' => 'assets/images/cardstack-web/1.webp',
       ],
       [
         'num'   => '02',
         'title' => 'Search Engine Optimization',
         'desc'  => 'Technical SEO that gets your site found through structured data, clean site architecture, fast load times, and content built around what your customers are actually searching for.',
-        'image' => 'assets/images/cardstack-web/2.png',
+        'image' => 'assets/images/cardstack-web/2.webp',
       ],
       [
         'num'   => '03',
         'title' => 'Responsive Development & Tuning',
         'desc'  => 'Pixel accurate builds that hold up on every screen size, tuned for speed and stability, cross browser tested, performance audited, and ready to scale as your traffic grows.',
-        'image' => 'assets/images/cardstack-web/3.png',
+        'image' => 'assets/images/cardstack-web/3.webp',
       ],
     ];
     ?>

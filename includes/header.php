@@ -16,7 +16,7 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     <meta property="og:title" content="<?=e($pageTitle)?>">
     <meta property="og:description" content="<?=e($pageDescription)?>">
     <meta property="og:url" content="<?=e($canonical)?>">
-    <meta property="og:image" content="<?=e(url('assets/images/logo.png'))?>">
+    <meta property="og:image" content="<?=e(url('assets/images/logo.webp'))?>">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=e(url('assets/images/favicon.png'))?>">
     <link rel="shortcut icon" href="<?=e(url('assets/images/favicon.png'))?>">
@@ -31,7 +31,7 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
 
 <body><a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="siteHeader">
-        <div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png"
+        <div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.webp"
                     alt="Sash Tech logo"></a><button
                 class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
                 aria-label="Open menu"><span></span><span></span><span></span></button>

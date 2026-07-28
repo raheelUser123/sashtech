@@ -35,7 +35,7 @@ if (is_dir($baseDir)) {
 <!-- ===== SERVICE HERO ===== -->
 <section class="page-hero">
   <div class="image-wrap">
-   <img class="ssss" src="assets/images/chr1.png"
+   <img class="ssss" src="assets/images/chr1.webp"
            alt="Illustration &amp; Creative Artwork"
            onerror="this.style.display='none'"
            style="width:100%;max-width:630px;display:block;margin:0 auto;">
