@@ -12,7 +12,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1><?=e($service['title'])?></h1>
       <p><?=e($service['short'])?></p>
-      <button class="btn btn-primary" data-popup-open>Request a Quote <span>↗</span></button>
+      <button class="btn btn-primary" data-popup-open>Request a Quote <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
     </div>
     <?php if (!empty($service['image'])): ?>
    
@@ -160,6 +160,6 @@ $itemDescriptions = [
   <?php endforeach; ?>
 </div></div></section>
 <?php if ($slug === 'ai-search-optimization'): ?>
-<section><div class="container"><div class="section-head"><div><span class="eyebrow">READY TO DOMINATE THE FUTURE OF SEARCH?</span><h2>Don't let AI search engines leave your brand behind.</h2></div></div><div class="btn-group" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;"><button class="btn btn-primary" data-popup-open>Get Started with GEO <span>↗</span></button><a class="btn btn-secondary" href="contact.php">Schedule a Strategy Call <span>↗</span></a></div></div></section>
+<section><div class="container"><div class="section-head"><div><span class="eyebrow">READY TO DOMINATE THE FUTURE OF SEARCH?</span><h2>Don't let AI search engines leave your brand behind.</h2></div></div><div class="btn-group" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;"><button class="btn btn-primary" data-popup-open>Get Started with GEO <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button><a class="btn btn-secondary" href="contact.php">Schedule a Strategy Call <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></a></div></div></section>
 <?php endif; ?>
 <?php include 'includes/footer.php'; ?>

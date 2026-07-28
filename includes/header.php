@@ -45,7 +45,7 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
                 </div><a class="<?=is_active('portfolio.php')?>" href="portfolio.php">Portfolio</a><a
                     class="<?=is_active('pricing.php')?>" href="pricing.php">Pricing</a><a
                     class="<?=is_active('contact.php')?>" href="contact.php">Contact</a><button
-                    class="btn btn-primary nav-cta" data-popup-open>Start a Project <span>↗</span></button>
+                    class="btn btn-primary nav-cta start-cta" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
             </nav>
         </div>
     </header>

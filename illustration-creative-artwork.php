@@ -45,7 +45,7 @@ if (is_dir($baseDir)) {
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1>Illustration &amp; Creative Artwork</h1>
       <p>Distinctive covers, characters and bespoke artwork created to make ideas unforgettable.</p>
-      <button class="btn btn-primary" data-popup-open>Request a Quote <span>↗</span></button>
+      <button class="btn btn-primary" data-popup-open>Request a Quote <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
     </div>
     <div class="reveal">
      
@@ -241,8 +241,10 @@ if (is_dir($baseDir)) {
         if (total <= 1) return;
 
         const mkBtn = (label, disabled, active, onClick) => {
-            const b = document.createElement('button');
-            b.innerHTML = label;
+          const b = document.createElement('button');
+          const leftSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></span>';
+          const rightSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>';
+          if (label === '←') b.innerHTML = leftSvg; else if (label === '→') b.innerHTML = rightSvg; else b.innerHTML = label;
             b.disabled  = disabled;
             if (active) b.classList.add('active');
             b.addEventListener('click', () => { onClick(); render(); scrollUp(); });

@@ -35,8 +35,8 @@
         <h2>Better video, smarter strategy — grow your channel.</h2>
         <p>We craft YouTube-ready edits, thumbnails, and channel strategies that turn viewers into subscribers. See a captured moment from our process below.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
-          <button class="btn btn-primary" data-popup-open>Start a Project <span>↗</span></button>
-          <a class="btn btn-outline" href="creator-growth-youtube-strategy.php">See Service <span>→</span></a>
+          <button class="btn btn-primary start-cta" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
+          <a class="btn btn-outline" href="creator-growth-youtube-strategy.php">See Service <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a>
         </div>
       </div>
 

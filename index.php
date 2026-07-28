@@ -12,8 +12,8 @@ include 'includes/header.php';
       <h1>Design that speaks.<br><span>Strategy that grows.</span></h1>
       <p>We help businesses, creators, and authors scale their digital presence through high end design, video, and strategic growth.</p>
       <div class="hero-actions">
-        <button class="btn btn-primary" data-popup-open>Start a Project <span>↗</span></button>
-        <a class="btn btn-outline light" href="portfolio.php">View Our Work <span>→</span></a>
+        <button class="btn btn-primary start-cta" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
+        <a class="btn btn-outline light" href="portfolio.php">View Our Work <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a>
       </div>
       <div class="trust-points"><span>✓ Fast turnaround</span><span>✓ Premium quality</span><span>✓ Clear communication</span></div>
     </div>
@@ -48,10 +48,10 @@ include 'includes/header.php';
   <div class="container">
     <div class="center-head reveal"><span class="eyebrow">WHAT WE DO</span><h2>Our Creative Services</h2><p>Creative and digital solutions from start to finish to elevate your brand, content, and online growth.</p></div>
     <div class="service-home-grid">
-      <?php foreach($services as $slug=>$s): ?><article class="service-home-card reveal"><div class="service-icon"><?=e($s['icon'])?></div><h3><?=e($s['title'])?></h3><p><?=e($s['short'])?></p><a href="<?=$slug?>.php">Explore <span>→</span></a></article><?php endforeach; ?>
-      <article class="service-home-card reveal"><div class="service-icon">✎</div><h3>Content & Copywriting</h3><p>High-converting copy that engages audiences and supports stronger campaigns.</p><a href="digital-marketing-paid-acquisition.php">Explore <span>→</span></a></article>
+      <?php foreach($services as $slug=>$s): ?><article class="service-home-card reveal"><div class="service-icon"><?=e($s['icon'])?></div><h3><?=e($s['title'])?></h3><p><?=e($s['short'])?></p><a href="<?=$slug?>.php">Explore <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a></article><?php endforeach; ?>
+      <article class="service-home-card reveal"><div class="service-icon">✎</div><h3>Content & Copywriting</h3><p>High-converting copy that engages audiences and supports stronger campaigns.</p><a href="digital-marketing-paid-acquisition.php">Explore <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a></article>
     </div>
-    <div class="center-action"><a class="btn btn-outline" href="services.php">View All Services <span>→</span></a></div>
+    <div class="center-action"><a class="btn btn-outline" href="services.php">View All Services <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a></div>
   </div>
 </section>
 <?php
@@ -102,7 +102,7 @@ include 'includes/header.php';
     </a>
   </div>
   <div class="container showcase-cta-row">
-    <a class="btn btn-outline" href="portfolio.php">View All Web Projects <span>→</span></a>
+    <a class="btn btn-outline" href="portfolio.php">View All Web Projects <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a>
   </div>
 </section>
 
@@ -132,7 +132,7 @@ include 'includes/header.php';
     </div>
   </div>
   <div class="container showcase-cta-row">
-    <a class="btn btn-outline" href="portfolio.php">View All Branding <span>→</span></a>
+    <a class="btn btn-outline" href="portfolio.php">View All Branding <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a>
   </div>
 </section>
 
@@ -165,14 +165,14 @@ include 'includes/header.php';
       </a>
     </div>
   </div>
-  <div class="container showcase-cta-row">
-    <a class="btn btn-outline" href="illustration-creative-artwork.php">View All Illustrations <span>→</span></a>
+    <div class="container showcase-cta-row">
+    <a class="btn btn-outline" href="illustration-creative-artwork.php">View All Illustrations <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a>
   </div>
 
 </section>
 
 <section class="process-section"><div class="container"><div class="process-shell">
-  <div class="process-intro reveal"><div><span class="eyebrow">OUR PROCESS</span><h2>From first idea to final delivery.</h2><p>Every project follows a clear, collaborative system designed to protect quality, timing and communication.</p><button class="btn btn-outline light" data-popup-open>Start Your Project <span>→</span></button></div><div style="margin:24px 0;"><img src="assets/images/newimages/From first idea to final delivery. Our process section.webp" alt="Process workflow overview" style="width:100%; border-radius:16px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 15px 35px rgba(0,0,0,0.25);"></div></div>
+  <div class="process-intro reveal"><div><span class="eyebrow">OUR PROCESS</span><h2>From first idea to final delivery.</h2><p>Every project follows a clear, collaborative system designed to protect quality, timing and communication.</p><button class="btn btn-outline light" data-popup-open>Start Your Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></button></div><div style="margin:24px 0;"><img src="assets/images/newimages/From first idea to final delivery. Our process section.webp" alt="Process workflow overview" style="width:100%; border-radius:16px; border:1px solid rgba(255,255,255,0.08); box-shadow:0 15px 35px rgba(0,0,0,0.25);"></div></div>
   <div class="process-steps">
   <?php $steps=[['01','Discover','We learn your goals, audience, references and project requirements.'],['02','Plan','We define the scope, milestones, creative direction and delivery schedule.'],['03','Create','Our specialists develop the main concepts, visuals and production assets.'],['04','Refine','You review the work while we improve every detail through focused revisions.'],['05','Deliver','Final files are quality-checked, organized and delivered ready to launch.']]; foreach($steps as $s): ?><article class="process-node reveal"><div class="step-top"><b><?=$s[0]?></b><span class="step-line"></span></div><h3><?=$s[1]?></h3><p><?=$s[2]?></p></article><?php endforeach; ?>
   </div></div></div></section>
@@ -373,7 +373,7 @@ include 'includes/header.php';
 
 <?php include 'includes/yt-video-section.php'; ?>
 
-<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span>→</span></button><a class="btn btn-outline light" href="contact.php">Get in Touch <span>→</span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.webp" alt="Sash Tech creative growth collaboration"></div></div></section>
+<section class="home-cta"><div class="container home-cta-inner"><div><span class="eyebrow">LET'S WORK TOGETHER</span><h2>Have a project in mind?</h2><p>Let’s create something bold, memorable and built to perform.</p><div class="hero-actions"><button class="btn btn-light" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></button><a class="btn btn-outline light" href="contact.php">Get in Touch <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span></a></div></div><div class="home-cta-image"><img src="assets/images/newimages/LET'S WORK TOGETHER section bottom.webp" alt="Sash Tech creative growth collaboration"></div></div></section>
 
 
 <?php include 'includes/footer.php'; ?>
