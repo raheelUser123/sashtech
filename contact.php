@@ -2,3 +2,4 @@
 <section class="page-hero"><div class="container"><span class="eyebrow">CONTACT</span><h1>Let’s bring your vision to life.</h1><p>Tell us about your project, target goals, and timeline. We’ll review your details and reach out shortly with a custom roadmap.</p></div></section>
 <section><div class="container contact-layout"><aside class="contact-box reveal"><h2>Let’s talk.</h2><p><strong>Email</strong><br><a href="mailto:<?=e(CONTACT_EMAIL)?>"><?=e(CONTACT_EMAIL)?></a></p><p><strong>Phone</strong><br><a href="tel:<?=e(CONTACT_PHONE)?>"><?=e(CONTACT_PHONE)?></a></p><p><strong>Hours</strong><br>Monday to Friday<br>9:00 AM to 6:00 PM</p><p><strong>Response time</strong><br>Usually within 1 to 2 business days.</p></aside><div class="reveal"><?php include 'includes/form.php'; ?></div></div></section>
 <?php include 'includes/footer.php'; ?>
+

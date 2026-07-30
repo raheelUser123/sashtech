@@ -32,7 +32,7 @@
     <div class="yt-video-grid">
       <div class="yt-copy reveal" id="ytCopy">
         <span class="eyebrow">YOUTUBE & CREATOR GROWTH</span>
-        <h2>Better video, smarter strategy — grow your channel.</h2>
+        <h2>Better video, smarter strategy grow your channel.</h2>
         <p>We craft YouTube-ready edits, thumbnails, and channel strategies that turn viewers into subscribers. See a captured moment from our process below.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
           <button class="btn btn-primary start-cta" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>

@@ -9,7 +9,7 @@ include 'includes/header.php';
   <div class="container hero-grid">
     <div class="hero-copy reveal">
       <span class="eyebrow">CREATIVE • STRATEGY • GROWTH</span>
-      <h1>Design that speaks.<br><span>Strategy that grows.</span></h1>
+      <h1>Design that speaks.<br><span>Strategy that grows</span></h1>
       <p>We help businesses, creators, and authors scale their digital presence through high end design, video, and strategic growth.</p>
       <div class="hero-actions">
         <button class="btn btn-primary start-cta" data-popup-open>Start a Project <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
