@@ -61,8 +61,8 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
     <div class="built-grid">
       <?php
       $builtProjects = [
-        ['img' => 'assets/images/portfolio/webui/web1.jpeg', 'name' => 'Paronama Website'],
-        ['img' => 'assets/images/portfolio/webui/web2.jpeg', 'name' => 'Photos Website'],
+        ['img' => 'assets/images/portfolio/webui/web6.webp', 'name' => 'Paronama Website'],
+        ['img' => 'assets/images/portfolio/webui/web5.webp', 'name' => 'Photos Website'],
         ['img' => 'assets/images/portfolio/webui/web3.webp', 'name' => 'Artist Website'],
         ['img' => 'assets/images/portfolio/webui/web4.webp', 'name' => 'Organic Website'],
       ];
