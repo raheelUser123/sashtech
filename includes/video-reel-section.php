@@ -31,24 +31,41 @@
     </div>
 
     <?php
-    // Auto-detect every reel1.mp4, reel2.mp4, reel3.mp4 ... in assets/images/.
-    // Just drop more reelN.mp4 files in there and they'll show up automatically.
+    // Auto-detect all reel videos from the dedicated reels folder, with a fallback to the old images folder.
+    // Any duplicate files are removed automatically so the marquee stays clean.
     $reelFiles = [];
-    $reelDir = __DIR__ . '/../assets/images/';
-    if (is_dir($reelDir)) {
+    $reelDirs = [
+      __DIR__ . '/../assets/reels/',
+      __DIR__ . '/../assets/images/'
+    ];
+
+    foreach ($reelDirs as $reelDir) {
+      if (!is_dir($reelDir)) {
+        continue;
+      }
+
       $files = scandir($reelDir);
-      if ($files !== false) {
-        foreach ($files as $file) {
-          if (preg_match('/^reel\d+\.mp4$/i', $file)) {
-            $reelFiles[] = 'assets/images/' . $file;
-          }
+      if ($files === false) {
+        continue;
+      }
+
+      foreach ($files as $file) {
+        $fullPath = $reelDir . $file;
+        if (!is_file($fullPath) || !preg_match('/\.mp4$/i', $file)) {
+          continue;
         }
+
+        $relativeDir = str_contains($reelDir, '/assets/reels/') ? 'assets/reels/' : 'assets/images/';
+        $reelFiles[] = $relativeDir . $file;
       }
     }
+
+    $reelFiles = array_values(array_unique($reelFiles));
     natsort($reelFiles);
     $reelFiles = array_values($reelFiles);
+
     if (empty($reelFiles)) {
-      $reelFiles[] = 'assets/images/reel1.mp4';
+      $reelFiles[] = 'assets/reels/reel1.mp4';
     }
 
     $cardsPerRow = 9;
