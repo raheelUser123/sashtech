@@ -115,3 +115,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
 });
 
+// Replace textual arrow markers with inline SVG icons and add CTA animation
+(function(){
+  const rightSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>';
+  const extSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span>';
+
+  // Replace common patterns in buttons and links
+  document.querySelectorAll('button, a, .card-link').forEach((el) => {
+    try{
+      el.innerHTML = el.innerHTML.replace(/<span>\s*→\s*<\/span>/g, rightSvg)
+                                  .replace(/<span>\s*↗\s*<\/span>/g, extSvg)
+                                  .replace(/\s→\s/g, ' ' + rightSvg)
+                                  .replace(/\s↗\s/g, ' ' + extSvg);
+    }catch(e){}
+  });
+
+  // Add pulse animation only to popup buttons labelled "Start a Project" or "Start Your Project"
+  document.querySelectorAll('button[data-popup-open]').forEach(b => {
+    const txt = (b.textContent || '').trim().toLowerCase();
+    if (txt.includes('start a project') || txt.includes('start your project')) {
+      b.classList.add('btn-animated');
+    }
+  });
+})();
+// Replace standalone text nodes that contain only arrow glyphs (covers data-driven icons)
+(function(){
+  const rightSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>';
+  const extSvg = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span>';
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+  let n;
+  const skipParents = ['SCRIPT','STYLE'];
+  while(n = walker.nextNode()){
+    if (!n.nodeValue) continue;
+    const txt = n.nodeValue.trim();
+    if (txt === '→' || txt === '↗'){
+      const parent = n.parentElement;
+      if (!parent || skipParents.includes(parent.tagName)) continue;
+      const frag = document.createRange().createContextualFragment(txt === '→' ? rightSvg : extSvg);
+      parent.replaceChild(frag, n);
+    }
+  }
+})();
+

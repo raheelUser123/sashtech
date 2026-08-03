@@ -12,7 +12,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
       <span class="eyebrow">SPECIALIST SERVICE</span>
       <h1><?=e($service['title'])?></h1>
       <p><?=e($service['short'])?></p>
-      <button class="btn btn-primary" data-popup-open>Request a Quote <span>↗</span></button>
+      <button class="btn btn-primary" data-popup-open>Request a Quote <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button>
     </div>
     <?php if (!empty($service['image'])): ?>
    
@@ -61,8 +61,8 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
     <div class="built-grid">
       <?php
       $builtProjects = [
-        ['img' => 'assets/images/portfolio/webui/web1.jpeg', 'name' => 'Paronama Website'],
-        ['img' => 'assets/images/portfolio/webui/web2.jpeg', 'name' => 'Photos Website'],
+        ['img' => 'assets/images/portfolio/webui/web6.webp', 'name' => 'Paronama Website'],
+        ['img' => 'assets/images/portfolio/webui/web5.webp', 'name' => 'Photos Website'],
         ['img' => 'assets/images/portfolio/webui/web3.webp', 'name' => 'Artist Website'],
         ['img' => 'assets/images/portfolio/webui/web4.webp', 'name' => 'Organic Website'],
       ];
@@ -143,7 +143,7 @@ $itemDescriptions = [
 ];
 ?>
 <section class="dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">WHAT’S INCLUDED</span><h2>Focused capabilities, professionally delivered.</h2></div></div><div class="cards"><?php foreach($service['items'] as $item): ?><?php $description = $itemDescriptions[$slug][$item] ?? 'Tailored planning, creative development, refinement and delivery for your specific goals and platforms.'; ?><article class="service-card reveal"><div class="card-icon">✦</div><h3><?=e($item)?></h3><p><?=e($description)?></p></article><?php endforeach; ?></div></div></section>
-<?php include 'includes/yt-video-section.php'; ?>
+<!-- yt-video-section moved to homepage -->
 <section><div class="container two-col"><div><span class="eyebrow">WHO IT’S FOR</span><h2>Built for brands, creators, authors, individuals and teams ready to improve their output.</h2></div><ul class="feature-list"><li>Startups launching a new idea</li><li>Creators building a stronger content system</li><li>Businesses refreshing their digital presence</li><li>Agencies needing reliable production support</li><li>Authors, publishers and individuals developing visual assets</li></ul></div></section>
 <section><div class="container"><div class="section-head"><div><span class="eyebrow">PROCESS</span><h2>A simple path from brief to delivery.</h2></div></div><div class="process-steps">
   <?php 
@@ -160,6 +160,6 @@ $itemDescriptions = [
   <?php endforeach; ?>
 </div></div></section>
 <?php if ($slug === 'ai-search-optimization'): ?>
-<section><div class="container"><div class="section-head"><div><span class="eyebrow">READY TO DOMINATE THE FUTURE OF SEARCH?</span><h2>Don't let AI search engines leave your brand behind.</h2></div></div><div class="btn-group" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;"><button class="btn btn-primary" data-popup-open>Get Started with GEO <span>↗</span></button><a class="btn btn-secondary" href="contact.php">Schedule a Strategy Call <span>↗</span></a></div></div></section>
+<section><div class="container"><div class="section-head"><div><span class="eyebrow">READY TO DOMINATE THE FUTURE OF SEARCH?</span><h2>Don't let AI search engines leave your brand behind.</h2></div></div><div class="btn-group" style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;"><button class="btn btn-primary" data-popup-open>Get Started with GEO <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></button><a class="btn btn-secondary" href="contact.php">Schedule a Strategy Call <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7"/><path d="M10 14L21 3"/></svg></span></a></div></div></section>
 <?php endif; ?>
 <?php include 'includes/footer.php'; ?>

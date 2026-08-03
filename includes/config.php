@@ -5,9 +5,10 @@ if (session_status() !== PHP_SESSION_ACTIVE) { session_start(); }
 define('SITE_NAME', 'Sash Tech Digital');
 define('SITE_TAGLINE', 'Your Edge Design');
 define('SITE_URL', 'https://sashtech.digital');
-define('CONTACT_EMAIL', 'contact@sashtech.digital');
-define('CONTACT_PHONE', '+1 000 000 0000');
-define('CONTACT_ADDRESS', 'Office fivestar block L');
+define('CONTACT_EMAIL', 'info@sashtech.digital');
+define('CONTACT_PHONE', '+1 (385) 885-7732');
+define('CONTACT_ADDRESS', '2312 Pontiac Dr
+Harker Heights, Texas(TX), 76548');
 
 define('SMTP_HOST', 'sashtech.digital');
 define('SMTP_PORT', 465);

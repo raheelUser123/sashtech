@@ -155,7 +155,7 @@ img.ssss {
     right: 0;
     max-width: 630px;
     width: 100%;
-    height: 600px;
+    height: 530px;
     object-fit: cover;
     object-position: top;
     border: 2px solid rgba(255,255,255,.15);
@@ -433,6 +433,23 @@ position: relative;
     z-index: 5;
     pointer-events: none;
 }
+
+/* Icon inline for buttons */
+.btn-icon{display:inline-flex;align-items:center;justify-content:center;margin-left:8px}
+.btn-icon svg{display:block;width:1em;height:1em;stroke:currentColor;fill:none}
+
+/* Subtle pulse/blink animation for CTAs */
+/* Smooth pulse animation for CTAs (single ramp to peak and back) */
+@keyframes btn-pulse {
+    0% { box-shadow: 0 10px 30px rgba(108,76,255,0.16); transform: translateY(0) scale(1); }
+    50% { box-shadow: 0 30px 90px rgba(108,76,255,0.32); transform: translateY(-3px) scale(1.04); }
+    100% { box-shadow: 0 10px 30px rgba(108,76,255,0.16); transform: translateY(0) scale(1); }
+}
+.btn-animated { animation: btn-pulse 1.6s ease-in-out infinite; will-change: transform, box-shadow; }
+
+/* Keep animation running on hover so CTAs stay attention-grabbing */
+.btn-animated:hover { animation-play-state: running; }
+
 .logo-marquee-wrapper::after {
     right: 0;
     background: linear-gradient(to left, #050816, transparent);
@@ -2186,7 +2203,7 @@ section {
     box-shadow: 0 24px 60px rgba(0, 0, 0, .5);
 }
 .mockup-card::after {
-    content: 'View Design ↗';
+    content: 'View Design';
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);

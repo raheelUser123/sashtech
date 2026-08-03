@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Previous Button
         const prevBtn = document.createElement('button');
-        prevBtn.innerHTML = '←';
+        prevBtn.innerHTML = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></span>';
         prevBtn.disabled = currentPage === 1;
         prevBtn.addEventListener('click', () => {
             currentPage--;
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Next Button
         const nextBtn = document.createElement('button');
-        nextBtn.innerHTML = '→';
+        nextBtn.innerHTML = '<span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>';
         nextBtn.disabled = currentPage === totalPages;
         nextBtn.addEventListener('click', () => {
             currentPage++;
