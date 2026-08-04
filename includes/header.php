@@ -18,8 +18,9 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     <meta property="og:url" content="<?=e($canonical)?>">
     <meta property="og:image" content="<?=e(url('assets/images/logo.webp'))?>">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?=e(url('assets/images/favicon.png'))?>">
-    <link rel="shortcut icon" href="<?=e(url('assets/images/favicon.png'))?>">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?=e(url('assets/images/favicon.png'))?>">
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="<?=e(url('assets/images/favicon.png'))?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
