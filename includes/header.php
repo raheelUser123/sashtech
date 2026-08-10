@@ -18,18 +18,26 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     <meta property="og:url" content="<?=e($canonical)?>">
     <meta property="og:image" content="<?=e(url('assets/images/logo.webp'))?>">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="48x48" href="<?=e(url('assets/images/favicon.png'))?>">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?=e(url('assets/images/favicon.png'))?>">
+   <!-- Favicon with Brand Title -->
+    <link rel="icon" type="image/png" sizes="48x48" href="<?=e(url('assets/images/favicon.png'))?>" title="Sash Tech Favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=e(url('assets/images/favicon.png'))?>" title="Sash Tech Logo">
+
+    <!-- Schema for Brand Name (Google ko brand name confirmation dene ke liye) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sash Tech",
+      "url": "https://sashtech.digital/"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css?v=20260713-3">
     <script defer src="assets/js/main.js?v=20260713-3"></script>
 </head>
-
 <body><a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="siteHeader">
         <div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.webp"
