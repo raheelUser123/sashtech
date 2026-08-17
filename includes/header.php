@@ -19,9 +19,11 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     <meta property="og:image" content="<?=e(url('assets/images/logo.webp'))?>">
     <meta name="twitter:card" content="summary_large_image">
    <!-- Favicon with Brand Title -->
-    <link rel="icon" type="image/png" sizes="48x48" href="<?=e(url('assets/images/favicon.png'))?>" title="Sash Tech Favicon">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?=e(url('assets/images/favicon.png'))?>" title="Sash Tech Logo">
-
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
     <!-- Schema for Brand Name (Google ko brand name confirmation dene ke liye) -->
     <script type="application/ld+json">
     {
