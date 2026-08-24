@@ -37,6 +37,7 @@ if (is_dir($baseDir)) {
   <div class="image-wrap">
    <img class="ssss" src="assets/images/chr1.webp"
            alt="Illustration &amp; Creative Artwork"
+           fetchpriority="high" decoding="async"
            onerror="this.style.display='none'"
            style="width:100%;max-width:630px;display:block;margin:0 auto;">
 </div>
@@ -193,7 +194,7 @@ if (is_dir($baseDir)) {
              data-tab="<?=e($slug)?>"
              href="<?=e($img)?>"
              target="_blank" rel="noopener">
-            <img src="<?=e($img)?>" alt="<?=e($info['label'])?>" loading="lazy">
+            <img src="<?=e($img)?>" alt="<?=e($info['label'])?>" loading="lazy" decoding="async">
             <div class="illus-card-label"><?=e($info['label'])?></div>
           </a>
         <?php endforeach; ?>

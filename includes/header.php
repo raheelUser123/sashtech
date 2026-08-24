@@ -34,6 +34,8 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
     }
     </script>
 
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -43,7 +45,7 @@ $pageTitle=$pageTitle??SITE_NAME.' | Creative Digital Agency';$pageDescription=$
 <body><a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="siteHeader">
         <div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.webp"
-                    alt="Sash Tech logo"></a><button
+                    alt="Sash Tech logo" decoding="async"></a><button
                 class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
                 aria-label="Open menu"><span></span><span></span><span></span></button>
             <nav class="main-nav" id="mainNav" aria-label="Primary navigation"><a class="<?=is_active('/')?>"

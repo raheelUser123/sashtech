@@ -42,8 +42,7 @@
 
       <div class="yt-media reveal" id="ytMedia">
         <div class="yt-phone" id="ytPhone">
-          <video class="yt-video-el" id="ytVideoEl" muted playsinline preload="metadata" loop>
-            <source src="assets/images/createyoutube-growthvideo/video-shot.mp4" type="video/mp4">
+          <video class="yt-video-el" id="ytVideoEl" muted playsinline preload="none" loop data-src="assets/images/createyoutube-growthvideo/video-shot.mp4">
           </video>
           <div class="yt-video-overlay">
             <button class="yt-video-play" id="ytPlayBtn" aria-label="Play video">
@@ -75,16 +74,13 @@
     io.observe(media);
     io.observe(copy);
 
-    // Ensure portrait video looks good: use height, keep width auto
-    function fitPortrait(){
-      // CSS handles sizing; ensure video is paused by default
-      video.pause(); video.muted = true; video.currentTime = 0;
-    }
-    fitPortrait();
-
     // Play/pause on click
     play.addEventListener('click', function(e){
       e.preventDefault();
+      if (!video.src && video.dataset.src) {
+        video.src = video.dataset.src;
+        video.load();
+      }
       if (video.paused){ video.muted = false; video.play().catch(()=>{}); play.style.opacity = 0; }
       else { video.pause(); video.currentTime = 0; play.style.opacity = 1; }
     });

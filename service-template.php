@@ -5,7 +5,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
 ?>
 <section class="page-hero">
    <div class="image-wrap">
-      <img class="ssss" src="assets/images/newimages/<?=e($service['image'])?>" alt="<?=e($service['title'])?>" style="width: 100%; max-width: 630px;display: block; margin: 0 auto;">
+      <img class="ssss" src="assets/images/newimages/<?=e($service['image'])?>" alt="<?=e($service['title'])?>" fetchpriority="high" decoding="async" style="width: 100%; max-width: 630px;display: block; margin: 0 auto;">
     </div>
   <div class="container two-col">
     <div>
@@ -70,7 +70,7 @@ $pageTitle=$service['title'].' | Sash Tech';$pageDescription=$service['short'];i
       ?>
       <a class="built-card reveal" href="portfolio.php">
         <div class="built-card-inner">
-          <img src="<?=e($p['img'])?>" alt="<?=e($p['name'])?>" loading="lazy">
+          <img src="<?=e($p['img'])?>" alt="<?=e($p['name'])?>" loading="lazy" decoding="async">
         </div>
         <div class="built-card-caption">
           <span><?=e($p['name'])?></span>

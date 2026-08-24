@@ -97,7 +97,7 @@ foreach ($categories as $catId => $info) {
                                 Your browser does not support the video tag.
                             </video>
                         <?php else: ?>
-                            <img src="<?=e($item['file'])?>" alt="<?=e($item['name'])?>" loading="lazy">
+                            <img src="<?=e($item['file'])?>" alt="<?=e($item['name'])?>" loading="lazy" decoding="async">
                         <?php endif; ?>
                     </div>
                 </article>

@@ -77,8 +77,7 @@
       <div class="video-reel-row dir-left">
         <?php for ($i = 0; $i < $slotsPerRow; $i++): $reel = $reelFiles[$i % $total]; ?>
           <article class="video-reel-card reveal">
-            <video class="video-reel-video" muted loop playsinline autoplay preload="metadata">
-              <source src="<?=e($reel)?>" type="video/mp4">
+            <video class="video-reel-video" muted loop playsinline preload="none" data-src="<?=e($reel)?>">
             </video>
           </article>
         <?php endfor; ?>
@@ -86,8 +85,7 @@
       <div class="video-reel-row dir-right">
         <?php for ($i = 0; $i < $slotsPerRow; $i++): $reel = $reelFiles[($i + 1) % $total]; ?>
           <article class="video-reel-card reveal">
-            <video class="video-reel-video" muted loop playsinline autoplay preload="metadata">
-              <source src="<?=e($reel)?>" type="video/mp4">
+            <video class="video-reel-video" muted loop playsinline preload="none" data-src="<?=e($reel)?>">
             </video>
           </article>
         <?php endfor; ?>
@@ -98,7 +96,31 @@
 <script>
 (function () {
   const cards = document.querySelectorAll('.video-reel-section .video-reel-card');
+  if (!cards.length) return;
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      const video = entry.target.querySelector('.video-reel-video');
+      if (!video) return;
+
+      if (entry.isIntersecting) {
+        if (!video.src && video.dataset.src) {
+          video.src = video.dataset.src;
+          video.load();
+        }
+        const p = video.play();
+        if (p && typeof p.catch === 'function') p.catch(function () {});
+      } else {
+        if (video.src && !video.paused) {
+          video.pause();
+        }
+      }
+    });
+  }, { rootMargin: '200px 0px' });
+
   cards.forEach(function (card) {
+    observer.observe(card);
+
     const video = card.querySelector('.video-reel-video');
     if (!video) return;
 
