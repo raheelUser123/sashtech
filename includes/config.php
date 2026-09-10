@@ -6,7 +6,7 @@ define('SITE_NAME', 'Sash Tech Digital');
 define('SITE_TAGLINE', 'Your Edge Design');
 define('SITE_URL', 'https://sashtech.digital');
 define('CONTACT_EMAIL', 'info@sashtech.digital');
-define('CONTACT_PHONE', '+1 469-213-3674');
+define('CONTACT_PHONE', '+1 (469) 213-3674');
 define('CONTACT_ADDRESS', '2312 Pontiac Dr
 Harker Heights, Texas(TX), 76548');
 
